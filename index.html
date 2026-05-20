@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    
+    <script>
+        // Get the current hostname (e.g., "subdomain.example.com" or "user.github.io")
+        var currentHost = window.location.hostname;
+
+        // Check if the user came from a specific subdomain
+        if (currentHost === "drive.ncsd.app") {
+            window.location.href = "https://ncsd.sharepoint.com/SitePages/Find-My-Share-Drive.aspx?env=Embedded";
+        } 
+        // Optional: Check for a completely different domain
+        else if (currentHost === "example.ncsd.app") {
+            window.location.href = "https://example.com";
+        }
+        else{
+            window.location.href = "https://www.newarkcityschools.org/";
+        }
+    </script>
+</head>
+<body>
+    <h1>NCSD.APP Redirect</h1>
+    <h2>Please enable JavaScript to continue.</h2>
+</body>
+</html>
